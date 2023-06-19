@@ -21,5 +21,7 @@ public class Admin {
     @Embedded
     @Valid
     private User user;
+
+
 }
 

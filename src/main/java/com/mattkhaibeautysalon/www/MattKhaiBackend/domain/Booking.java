@@ -11,6 +11,7 @@ import java.time.LocalTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "booking")
 public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,6 +22,6 @@ public class Booking {
     private String status;
 
     @ManyToOne
-    private Customer customer;
+    private User user;
 }
 
